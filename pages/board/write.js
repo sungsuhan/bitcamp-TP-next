@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {useDispatch, connect} from 'react-redux';
-import {listRequest} from '@/modules/board/list';
-import {List} from '@/components/board/List';
+import {writeRequest} from '@/modules/board/write';
+import {Write} from '@/components/board/Write';
 
-const ListPage = () => {
+const WritePage = () => {
     const [board, setBoard] = useState({
         title: '',
         name: '',
@@ -20,8 +20,8 @@ const ListPage = () => {
     }
     const onSubmit = e => {
         e.preventDefault()
-        dispatch(listRequest(board))
+        dispatch(writeRequest(board))
     }
-    return null
+    return null;
 };
-export default ListPage;
+export default WritePage;

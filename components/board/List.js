@@ -1,12 +1,12 @@
 import axios from "axios"
-import tableStyles from "../common/styles/table.module.css"
+import tableStyles from "../../styles/Table.module.css"
 import { useEffect ,useState} from "react"
 
 export default function BoardList(){
     const columns = ["제목", "작성자", "문의 내용"]
     const [data, setData] = useState([])
     useEffect(()=>{
-        axios.get('http://localhost:5000/api/board/board-list').then(res=>{
+        axios.get('http://localhost:5000/api/board/list').then(res=>{
             setData(res.data.boards)
         }).catch(err=>{})
     }, [])

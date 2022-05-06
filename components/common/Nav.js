@@ -23,9 +23,9 @@ const HomeIcon = createSvgIcon(
 
 const basicSettings = {
     subTitles: [
-        '카운터', '게시판'
+        '카운터', 'WRITE', 'LIST'
     ],
-    urls: ["/basic/counter", '/board/list']
+    urls: ["/basic/counter", '/board/write', '/board/list']
 };
 
 export function Nav() {
