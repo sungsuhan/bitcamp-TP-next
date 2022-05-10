@@ -2,7 +2,8 @@ import styles from "@/styles/Home.module.css";
 
 export function Home() {
     return (
-        <> < header className = {styles.w3DisplayContainer+ ' ' + styles.w3Content+ ' ' + styles.w3Center} style = {{maxWidth:"1500px"}} > <img
+        <> 
+        < header className = {styles.w3DisplayContainer+ ' ' + styles.w3Content+ ' ' + styles.w3Center} style = {{maxWidth:"1500px"}} > <img
         className={styles.w3Image}
             src="https://www.w3schools.com/w3images/photographer.jpg"
             alt="Me"
@@ -22,7 +23,7 @@ export function Home() {
             <a href="#portfolio" className={styles.w3BarItem+ ' ' +styles.w3Button}>Portfolio</a>
             <a href="#contact" className={styles.w3BarItem+ ' ' +styles.w3Button}>Contact</a>
         </div>
-    </header>
+        </header>
 
     <div className={styles.w3Center+ ' ' +styles.w3LightGrey+ ' ' +styles.w3Padding16+ ' ' +styles.w3HideLarge+ ' ' +styles.w3HideMedium}>
         <div className={styles.w3Bar+ ' ' +styles.w3LightGrey}>

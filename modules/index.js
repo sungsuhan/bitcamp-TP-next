@@ -3,8 +3,6 @@ import { all } from 'redux-saga/effects';
 import counter, { counterSaga } from './basic/counter';
 import register, { registerSaga } from './auth/register';
 import login, { loginSaga } from './auth/login';
-import list, { listSaga } from './board/list';
-import write, { writeSaga } from './board/write';
 import {HYDRATE} from "next-redux-wrapper"
 const rootReducer = combineReducers({
     index: (state = {}, action) => {
@@ -18,12 +16,10 @@ const rootReducer = combineReducers({
     },
     counter,
     login,
-    register,
-    list,
-    write
+    register
 });
 export function* rootSaga() {
-  yield all([counterSaga(), registerSaga(), loginSaga(), listSaga(), writeSaga()]);
+  yield all([counterSaga(), registerSaga(), loginSaga()]);
 }
 
 export default rootReducer;
