@@ -23,7 +23,7 @@ const HomeIcon = createSvgIcon(
 
 const basicSettings = {
     subTitles: [
-        '카운터'
+        'CLOZET'
     ],
     urls: ["/basic/counter"]
 };

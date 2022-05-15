@@ -67,7 +67,7 @@ export function Profile({loginUser}) {
 
                         <div className="styles.card">
                             <img
-                                src="https://www.w3schools.com/w3images/team2.jpg"
+                                src="https://pbs.twimg.com/profile_images/631201370511552512/iR0IcBl7_400x400.jpg"
                                 alt="John"
                                 style={{
                                     width: "100%"
@@ -75,7 +75,7 @@ export function Profile({loginUser}) {
                             <h1>
                             {loginUser.name}
                             </h1>
-                            <p className="title">CEO & Founder, Example</p>
+                            <p className="title">clozet 로그인 성공</p>
                             <p>이메일 : {loginUser.email}</p>
                             <p>전화번호 : {loginUser.phone}</p>
                             <p>생년월일 : {loginUser.birth}</p>
@@ -97,9 +97,6 @@ export function Profile({loginUser}) {
                                     <i className="styles.fa styles.fa-facebook"></i>
                                 </a>
                             </div>
-                            <p>
-                                <button>Contact</button>
-                            </p>
                         </div>
                     </Box>
                 </Box>
