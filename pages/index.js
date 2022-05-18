@@ -1,5 +1,8 @@
 import { Layout, Home } from '@/components'
-import React from 'react';
+import React, {useEffect} from 'react';
+import axios from "axios";
+import styles from '../styles/Home.module.css'
+import { useSelector, useDispatch } from 'react-redux';
 
 export default function HomePage() {
   
